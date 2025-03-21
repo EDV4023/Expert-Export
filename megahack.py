@@ -34,7 +34,7 @@ develop_count_display = [
 ]
 
 img = Image.open("removebgverexpertexport.png").resize((50,65))
-st.sidebar.image(img)
+st.logo(img, size = "large")
 st.sidebar.title("Expert Exports")
 sidebar = st.sidebar.radio("Pages", options=["Expert Exports", "Our Mission"])
 
