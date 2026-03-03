@@ -40,7 +40,7 @@ st.sidebar.title("Expert Exports")
 expert_exports = st.sidebar.button("Expert Exports", type = "tertiary", icon = ":material/globe_asia:")
 our_mission = st.sidebar.button("Our Mission", type = "tertiary", icon = ":material/info:")
 
-if expert_exports:
+if expert_exports or not (expert_exports and our_mission):
     for index, x in enumerate(develop_count_display):
         develop_count_display[index] = x.title()
 
