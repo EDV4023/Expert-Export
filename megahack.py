@@ -34,11 +34,13 @@ develop_count_display = [
 ]
 
 img = Image.open("removebgverexpertexport.png").resize((50,65))
+st.set_page_config(page_title = "Expert Exports", page_icon = r"removebgverexpertexport.png", layout = "wide")
 st.logo(img, size = "large")
 st.sidebar.title("Expert Exports")
-sidebar = st.sidebar.radio("Pages", options=["Expert Exports", "Our Mission"])
+expert_exports = st.sidebar.button("Expert Exports", type = "tertiary", icon = ":material/globe_asia:")
+our_mission = st.sidebar.button("Our Mission", type = "tertiary", icon = ":material/info:")
 
-if sidebar == "Expert Exports":
+if expert_exports:
     for index, x in enumerate(develop_count_display):
         develop_count_display[index] = x.title()
 
@@ -86,7 +88,7 @@ if sidebar == "Expert Exports":
         if "".join(suggestions).strip() == "":
             st.write("Looks like your exports do not allign with in demand goods from other developing countries. To be integrated into South-South trade, it is essential that you produce materials sought after by the developing world. It appears your country's goods are valued higher in industrialized, high-income markets.")
         os.system("cls")
-elif sidebar == "Our Mission":
+elif our_mission:
     st.title("Our Mission")
     st.header("The Problem")
     st.markdown("*The global economy is characterized by the uneven development of developed core states and developing peripheral states. Lingering colonial imprints can be predominantly seen in the continents of Asia, South America, and Africa. In the contemporary era, the world has seen the influence of neocolonialism—when core states, typically prior colonial powers, exploit the natural resources of the periphery. Consequently, peripheral states are heavily dependent on core states, often exporting crude, unprocessed materials to core states. Thus, developing states become increasingly dependent on core states; their overreliance on certain exports and cash crops such as coffee can lead to economic collapse after increased competition or changes in consumer tastes. Since underdeveloped states are more concerned about sustaining their population, international trade agreements are not made between two developing states—also known as South-South trade. In fact, in 2023, less than a quarter of global commerce was from South-South trade. Rather, peripheral states typically trade with core states, redistributing wealth to the privileged, developed world.*\n")
