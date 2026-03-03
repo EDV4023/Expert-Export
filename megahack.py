@@ -6,7 +6,7 @@ import os
 from PIL import Image
 
 developing_countries = [
-    "afghanistan", "angola", "bangladesh", "benin", "bhutan", "burkina-faso", 
+    "afghanistan", "bangladesh", "benin", "bhutan", "burkina-faso", 
     "burundi", "cambodia", "cameroon", "central-african-republic", "comoros", 
     "democratic-republic-of-the-congo", "djibouti", "egypt", "eritrea", 
     "eswatini", "ethiopia", "the-gambia", "ghana", "guinea", "guinea-bissau", "haiti", 
@@ -20,7 +20,7 @@ developing_countries = [
 ]
 
 develop_count_display = [
-    "Select your country","afghanistan", "angola", "bangladesh", "benin", "bhutan", "burkina-faso", 
+    "Select your country","afghanistan", "bangladesh", "benin", "bhutan", "burkina-faso", 
     "burundi", "cambodia", "cameroon", "central-african-republic", "comoros", 
     "democratic-republic-of-the-congo", "djibouti", "egypt", "eritrea", 
     "eswatini", "ethiopia", "the-gambia", "ghana", "guinea", "guinea-bissau", "haiti", 
@@ -32,6 +32,8 @@ develop_count_display = [
     "serbia", "kyrgyz-republic", "tajikistan", "armenia", "mongolia", "belarus", "malawi", "algeria", 
     "morocco", "sudan", "libya", "gabon", "chile", "colombia", "paraguay", "peru", "ecuador", "suriname"
 ]
+
+# Bug with Angola Export List, removed for now
 
 img = Image.open("removebgverexpertexport.png").resize((50,65))
 st.set_page_config(page_title = "Expert Exports", page_icon = r"removebgverexpertexport.png", layout = "wide")

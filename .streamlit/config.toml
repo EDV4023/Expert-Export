@@ -1,7 +1,7 @@
 [theme]
 primaryColor="#000000"
 backgroundColor="#ffffff"
-secondaryBackgroundColor="#ffffffb6"
+secondaryBackgroundColor="#ffffff81"
 textColor="#000000"
 font = "Signika:https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap, sans-serif"
 baseFontSize = 18
